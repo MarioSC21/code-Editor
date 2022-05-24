@@ -8,18 +8,22 @@
   </head>
   <body>
     <div id="app">
-      <section>
+      <div class="grid">
         <div>
-          <textarea id="html"></textarea>
+          <textarea placeholder="html" id="html"></textarea>
+        </div>
+        <div class="gutter-col gutter-col-1"></div>
+        <div>
+          <textarea placeholder="js" id="js"></textarea>
         </div>
         <div>
-          <textarea id="js" ></textarea>
+          <textarea placeholder="css" id="css"></textarea>
         </div>
+        <div class="gutter-row gutter-row-1"></div>
         <div>
-          <textarea id="css" ></textarea>
+          <iframe srcdoc="<h1>hola mundo</h1>"></iframe>
         </div>
-        <iframe srcdoc="<h1>hola mundo</h1>"></iframe>
-      </section>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
