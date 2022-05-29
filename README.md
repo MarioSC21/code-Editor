@@ -1,5 +1,5 @@
 # code-editor
-Editor de codigo hecho con vanila HTML, CSS, JS y vite
+Editor de codigo hecho con HTML, CSS, JS y vite
 
 ## Un playground para escribir tu codigo HMTL , CSS Y JavaScript 
 Escribir codido de manera facil con una interfaz minimalista usando monaco estudio y emmet  
