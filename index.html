@@ -8,23 +8,77 @@
   </head>
   <body>
     <div id="app">
-      <div class="grid">
-        <div>
-          <textarea placeholder="html" id="html"></textarea>
+      <div class="grid-container " id="grid-container">
+        <div class="menu">
+          <button class="btn-document" id="btnDocument"></button>
+          <img src="./assets/icons8-ajustes.svg" alt="ajustes" class="img-ajustes " title="ajustes" id="ajustes">
         </div>
-        <div class="gutter-col gutter-col-1"></div>
-        <div>
-          <textarea placeholder="js" id="js"></textarea>
-        </div>
-        <div>
-          <textarea placeholder="css" id="css"></textarea>
-        </div>
-        <div class="gutter-row gutter-row-1"></div>
-        <div>
-          <iframe srcdoc="<h1>hola mundo</h1>"></iframe>
+       
+        <div class="grid" id="grid">
+          <div class="editor" id="html">
+            <div class="aviso-copy" id="avisoCopy">
+              <p class="aviso-p">Html copiado</p>
+            </div>
+            <div class="copy-container">
+              <img src="./assets/copy-svgrepo-com.svg" alt="copy" class="copy" id="copy" title="copiar" >
+            </div>
+          </div>   
+          <div class="gutter-col gutter-col-1 col" ></div>
+          <div class="editor" id="js">
+            <div class="aviso-copy" id="avisoCopy">
+              <p class="aviso-p">Js copiado</p>
+            </div>
+            <div class="copy-container">
+              <img src="./assets/copy-svgrepo-com.svg" alt="copy" class="copy" id="copy" title="copiar">
+            </div>
+          </div>
+          <div class="editor" id="css">
+            <div class="aviso-copy" id="avisoCopy">
+              <p class="aviso-p">Css copiado</p>
+            </div>
+            <div class="copy-container">
+              <img src="./assets/copy-svgrepo-com.svg" alt="copy" class="copy" id="copy" title="copiar">
+            </div>
+          </div>
+          <div class="gutter-row gutter-row-1 col" ></div>
+          <div class="ifra">
+            <iframe srcdoc=""></iframe>
+          </div>
         </div>
       </div>
     </div>
-    <script type="module" src="./main.js"></script>
+    <div class="menu-option" id="menu-option">
+      <div class="content">
+        <div>
+          <p><strong>Editor : </strong><span>desactiva o activa los numeros del editor</span></p>
+          <select name="linenumbers" id="linenumbers" class="select">
+            <option value="off" >off</option>
+            <option value="on" >on</option>
+          </select>
+        </div>
+        <div>
+          <p><strong>Editor : </strong><span>desactiva o activa el minimapa del editor</span></p>
+          <select name="minimap" id="minimap" class="select">
+            <option value="false" >Desactivado</option>
+            <option value="true" >Activado</option>
+          </select>
+        </div>
+        <div>
+          <p><strong>Editor : </strong><span>cambia el tema del editor</span></p>
+          <select name="theme" id="theme" class="select">
+            <option value="vs-dark" >Dark</option>
+            <option value="vs-light" >Light</option>
+          </select>
+        </div>
+        <div>
+          <p><strong>Editor : </strong><span>cambia el tamano de la fuente</span></p>
+          <input class="input-Number" type="number" name="Tamano-fuente" id="fuente" placeholder="tamano fuente" min="1" max="50">
+        </div>
+        <div class="button-div">
+          <button id="save">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
