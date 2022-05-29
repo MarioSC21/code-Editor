@@ -20,7 +20,7 @@ Tambien se puede descargar el HTML,CSS y JS y copiar al portapapeles.
 -Vanila JS  
 -VITE  
 
-# Librerias usadas
+### Librerias usadas
 -Monaco editor  
 -emmet-monaco-es  
 -js-base64  
